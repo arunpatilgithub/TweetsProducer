@@ -35,7 +35,7 @@ public class TweetsProducingScheduler {
 
 
     @Scheduled(fixedRate = 10000)
-    public void reportCurrentTime() {
+    public void publishTweets() {
 
         Set<String> tweetFields = new HashSet<>();
         tweetFields.add("author_id");
